@@ -1,7 +1,7 @@
 # Личный проект «YetiCave»
 
 * Студент: [Stepan Kormilin](https://up.htmlacademy.ru/php-individual/1/user/1776607).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Анатольев](https://htmlacademy.ru/profile/id1036727).
 
 ---
 
