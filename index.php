@@ -3,6 +3,13 @@ declare(strict_types=1);
 
 require_once 'data.php';
 
+/**
+ * @var array $categories
+ * @var array $lots
+ */
+
+require 'functions.php';
+
 $is_auth = rand(0, 1);
 
 $user_name = 'Stepan Kormilin'; // укажите здесь ваше имя
@@ -57,9 +64,9 @@ $user_name = 'Stepan Kormilin'; // укажите здесь ваше имя
         <p class="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
         <ul class="promo__list">
 
-            <?php foreach ($cats as $category): ?>
+            <?php foreach ($categories as $category): ?>
                 <li class="promo__item promo__item--boards">
-                    <a class="promo__link" href="pages/all-lots.html"><?= $category; ?></a>
+                    <a class="promo__link" href="pages/all-lots.html"><?= $category ?></a>
                 </li>
             <?php endforeach; ?>
 
@@ -82,7 +89,7 @@ $user_name = 'Stepan Kormilin'; // укажите здесь ваше имя
                         <div class="lot__state">
                             <div class="lot__rate">
                                 <span class="lot__amount">Стартовая цена</span>
-                                <span class="lot__cost"><?= $lot['price'] ?? ''; ?><b class="rub">р</b></span>
+                                <span class="lot__cost"><?= format_price($lot['price'] ?? 0); ?></span>
                             </div>
                             <div class="lot__timer timer">12:23</div>
                         </div>
