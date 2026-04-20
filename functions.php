@@ -29,7 +29,7 @@ function format_price(int $price): string {
  *
  * @return string Safe escaped string.
  */
-function e($value): string
+function esc($value): string
 {
     return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
 }

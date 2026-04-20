@@ -17,8 +17,17 @@ $userName = 'Stepan Kormilin';
 
 $title = 'YetiCave';
 
-$mainContent = include_template('main.php', compact('categories', 'lots'));
+$mainContent = include_template('main.php', compact(
+    'categories',
+    'lots'
+));
 
-$layoutContent = include_template('layout.php', compact('title', 'isAuth', 'userName', 'mainContent', 'categories'));
+$layoutContent = include_template('layout.php', compact(
+    'title',
+    'isAuth',
+    'userName',
+    'mainContent',
+    'categories'
+));
 
 print($layoutContent);

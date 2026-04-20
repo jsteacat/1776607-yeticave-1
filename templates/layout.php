@@ -12,7 +12,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title><?= e($title); ?></title>
+    <title><?= esc($title); ?></title>
     <link href="../css/normalize.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 </head>
@@ -34,7 +34,7 @@
                 <nav class="user-menu">
                     <?php if ($isAuth): ?>
                         <div class="user-menu__logged">
-                            <p><?= e($userName); ?></p>
+                            <p><?= esc($userName); ?></p>
                             <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
                             <a class="user-menu__logout" href="pages/logout.html">Выход</a>
                         </div>
@@ -63,7 +63,7 @@
 
                 <?php foreach ($categories as $category): ?>
                     <li class="nav__item">
-                        <a href="pages/all-lots.html"><?= e($category) ?></a>
+                        <a href="pages/all-lots.html"><?= esc($category) ?></a>
                     </li>
                 <?php endforeach; ?>
 
