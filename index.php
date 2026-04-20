@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require 'helpers.php';
+require_once 'helpers.php';
 require_once 'functions.php';
 require_once 'data.php';
 
