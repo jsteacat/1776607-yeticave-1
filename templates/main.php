@@ -1,6 +1,6 @@
 <section class="promo">
-    <p c    <h2 class="promo__title">Нужен стафф для катки?</h2>
-lass="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
+    <h2 class="promo__title">Нужен стафф для катки?</h2>
+    <p class="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
     <ul class="promo__list">
 
         <?php foreach ($categories as $category): ?>
