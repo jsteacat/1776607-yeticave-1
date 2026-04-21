@@ -43,6 +43,7 @@ function esc($value): string
  */
 function getDateTimeRange(string $date): array
 {
+    // если вдруг будет передана некорректная дата
     try {
         $targetDate = new DateTimeImmutable($date);
     } catch (Exception $e) {
